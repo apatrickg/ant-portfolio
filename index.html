@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/52f07981aa.js" crossorigin="anonymous"></script>
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script defer src="aosLoad.js"></script>
+    <script defer src="script.js"></script>
+    <title>Ant's Portfolio</title>
+</head>
+<body>
+
+<header>
+  <!-- Menu Overlay -->
+  <div class="overlay" id="overlay">
+    <!-- Menu Navigation -->
+    <nav>
+      <ul>
+        <li id="nav-1"><a href="#home">Home</a></li>
+        <li id="nav-2"><a href="#about">About</a></li>
+        <li id="nav-3"><a href="#projects">Projects</a></li>
+        <li id="nav-4"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <!-- Menu Bars -->
+  <div class="menu-bars" id="menu-bars">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+</header>
+
+<main>
+<!-- Sections -->
+  <section id="home">
+    <div class="home-container">
+      <div class="intro-card">
+        <h1 data-aos="fade-up"> Hi, I'm <span class="name">Anthony Gonzales</span></h1>
+        <p data-aos="fade-right" data-aos-delay="1000">A motivated, self-taught, developer chasing his dreams that is willing to learn and grow within the programming community.</p>
+        <form action="#about" method="get">
+          <button class="intro-btn" aria-label="links to about me section">More About Me</button>
+        </form>
+      </div>
+      <div class="intro-images">
+        <img src="/images/gummy-macbook.svg" class="laptop" alt="latop coffee">
+        <img src="/images/pixeltrue-web-development-1.svg" class="cs-guy" alt="guy at desk">
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <div class="about-me-container">
+      <div class="about-img-container" data-aos="flip-left">
+        <img src="/images/ucla.jpg" alt="me at ucla">
+      </div>
+      <div class="about-text"data-aos="zoom-in">
+        <h1>About Me</h1>
+        <p>I quickly gained an interest in programming after observing a friend work on a project for their summer class. Seeing the project come to life, along with hearing the thought process behind each line of code, I was enthralled. It was something so new and exciting to someone who had primarily been exposed to all things life science in university. From there, I was very motivated to learn from the plentiful resources on the internet. Needless to say, programming has become something that I truly enjoy.
+        </p>
+        <button class="about-btn">View Resume </button>
+      </div>
+    </div>
+    <div class="tech-stack" data-aos="fade-right">
+      <h2>Technical Skills</h2>
+      <div class="tech-container">
+        <img src="/images/icons8-html-5.svg" alt="html5">
+        <img src="/images/icons8-css3.svg" alt="css3-icon">
+        <img src="/images/icons8-javascript.svg" alt="vanilla-js">
+        <img src="/images/icons8-react.svg" alt="react">
+        <img src="/images/icons8-bootstrap-144.png" alt="bootstrap">
+        <img src="/images/icons8-node-js.svg" alt="node-js">
+      </div>
+    </div>
+  </section>
+
+
+  <section id="projects">
+    <div class="project-container">
+      <h1>Projects</h1>
+      <div class="project-item">
+        <div class="project-img" data-aos="flip-up">
+          <img src="/images/nasaAPOD.jpg" alt="NASA APOD">
+        </div>
+        <div class="project-text" data-aos="zoom-in-right">
+          <h2>NASA APOD</h2>
+          <p>Using the NASA Astronomy Photo of the Day API, ten random images with their descriptions are displayed on load with the ability to load more on button press. The user is then able to add and remove photos from their favorites list respectedly. Technologies involved within the project are vanilla JS, CSS and HTML. </p>
+          <div class="button-container">
+            <form action="https://apatrickg.github.io/Nasa-APOD/" target="_blank" method="get">
+              <button class="project-btn" aria-label="view nasa project live">View Live</button>
+            </form>
+            <form action="https://github.com/apatrickg/Nasa-APOD" target="_blank" method="get">
+              <button class="project-btn" aria-label="Nasa APOD github repo ">Source Code</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="project-item">
+        <div class="project-img" data-aos="flip-down">
+          <img src="/images/loopStudios.jpg" alt="loop-studios">
+        </div>
+        <div class="project-text" data-aos="zoom-in-left">
+          <h2>Loop Studios Landing Page </h2>
+          <p>From Frontend Mentor, this landing page is developed primarily with HTML, CSS and a bit of vanilla JS to toggle menu elements. It is mobile responsive across various platforms.</p>
+          <div class="button-container">
+            <form action="https://loop-studios-git-main-apatrickg.vercel.app/" target="_blank" method="get">
+              <button class="project-btn" aria-label="view loop studios live">View Live</button>
+            </form>
+            <form action="https://github.com/apatrickg/loop-studios" target="_blank" method="get">
+              <button class="project-btn" aria-label="see loop studios repo">Source Code</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="project-item">
+        <div class="project-img" data-aos="flip-left">
+          <img src="/images/sinnohCards.png" alt="pokemon card list ">
+        </div>
+        <div class="project-text" data-aos="zoom-in-up">
+          <h2>Sinnoh Card List</h2>
+          <p>Developed using the Pokemon API, Pokemon cards from the Sinnoh Region are dynamically generated through vanilla JS and displayed with CSS Grid. From the API, a the names, measurements, moves, abilties, and images of those Pokemon are retrieved. The site is mobile responsive as well.</p>
+          <div class="button-container">
+            <form action="https://johto-cards.vercel.app/" target="_blank" method="GET">
+              <button class="project-btn" aria-label="see cards live">View Live</button>
+            </form>
+            <form action="https://github.com/apatrickg/sinnohCards" target="_blank" method="GET">
+              <button class="project-btn" aria-label="view card repo">Source Code</button>
+            </form>
+          
+          </div>
+        </div>
+      </div>
+      <div class="project-item">
+        <div class="project-img" data-aos="flip-right">
+          <img src="/images/FormValid.jpg" alt="loop-studios">
+        </div>
+        <div class="project-text" data-aos="zoom-in-down">
+          <h2>Form Validator</h2>
+          <p>A mobile responsive site in which the user enters their information within the form and the data is verified with the Javascript Validation API. The site was built with vanilla JS, HTML and CSS.</p>
+          <div class="button-container">
+            <form action="https://apatrickg.github.io/Form-Validation/" target="_blank" method="GET">
+              <button class="project-btn" aria-label="see form valid live">View Live</button>
+            </form>
+            <form action="https://github.com/apatrickg/Form-Validation" target="_blank" method="GET">
+              <button class="project-btn" aria-label="see form validation repo">Source Code</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="contact">
+      <div class="contact-container">
+        <h1>Get in Touch with Me!</h1>
+        <div class="contact-grid">
+          <a data-aos="fade-right" data-aos-dalay="1000" href="https://github.com/apatrickg" target="_blank" class="c-g-item"><i class="fab fa-github"></i></a>
+          <a data-aos="fade-left" data-aos-dalay="1200" href="https://www.linkedin.com/in/anthony-gonzales-6b315b156/" target="_blank " class="c-g-item"><i class="fab fa-linkedin"></i></a>
+          <a data-aos="fade-right"  href="mailto:anthonypatrickg@gmail.com" class="c-g-item"><i class="fas fa-envelope-square"></i></a>
+        </div>
+      </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>&#169; 2021. Portfolio by Anthony Gonzales</p>
+</footer>
+</body>
+</html>
