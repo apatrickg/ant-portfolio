@@ -235,6 +235,12 @@ nav li:nth-of-type(4){
 .change .bar3 {
     transform: rotate(45deg) translate(-6px, -8px);
 }
+
+/* Prevent scroll on nav open */
+.fixed{
+   overflow: hidden;
+   position: fixed;
+}
   
 /* Sections */
 section {
@@ -867,12 +873,15 @@ section#contact {
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 45rem;
+        justify-content: space-around;
+        height: auto;
         margin: 0em 0em 1.5em 0em;
     }
 
     .tech-stack img{
-        object-fit: cover;
+        object-fit: none;
+        width: 40%;
+        height: 100%;
     }
 
 }

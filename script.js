@@ -9,6 +9,7 @@ const nav4 = document.getElementById('nav-4');
 function toggleNav(){
     // Menu Bars toggle
     menuBars.classList.toggle('change');
+    document.body.classList.toggle('fixed');
 
     // Toggle menu active
     overlay.classList.toggle('overlay-active');
